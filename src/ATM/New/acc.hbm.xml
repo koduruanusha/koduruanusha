@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="ATM.New.Account" table="account">
+		<id name="accno" column="accountno">
+			<generator class="assigned" />
+		</id>
+		
+		<property name="pin" column="pin" />
+		<property name="bal" column="balance"  />
+	</class>
+</hibernate-mapping>
